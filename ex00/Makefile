@@ -6,7 +6,7 @@
 #    By: ladloff <ladloff@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/18 13:34:22 by ladloff           #+#    #+#              #
-#    Updated: 2024/04/18 15:29:16 by ladloff          ###   ########.fr        #
+#    Updated: 2024/06/15 15:41:15 by ladloff          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,7 @@ OBJS := $(patsubst %.cpp,$(bindir)/%.o,$(notdir $(SRCS)))
 DEPS := $(OBJS:.o=.d)
 
 # Compiler flags
-CXXFLAGS := -Wall -Wextra -Werror -MMD -MP -std=c++98
+CXXFLAGS += -Wall -Wextra -Werror -MMD -MP -std=c++98
 
 # Declare phony targets
 .PHONY: all clean fclean re directories
