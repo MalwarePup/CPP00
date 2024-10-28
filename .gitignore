@@ -30,6 +30,7 @@
 *.exe
 *.out
 *.app
+megaphone
 
 # macOS
 *.DS_Store
