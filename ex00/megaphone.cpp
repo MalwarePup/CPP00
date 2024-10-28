@@ -6,10 +6,11 @@
 /*   By: ladloff <ladloff@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 13:40:03 by ladloff           #+#    #+#             */
-/*   Updated: 2024/06/15 15:36:57 by ladloff          ###   ########.fr       */
+/*   Updated: 2024/10/28 17:48:35 by ladloff          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <cctype>
 #include <iostream>
 
 int main(int argc, char *argv[])
@@ -24,7 +25,7 @@ int main(int argc, char *argv[])
 		{
 			for (int j = 0; argv[i][j]; j++)
 			{
-				std::cout << (char)toupper(argv[i][j]);
+				std::cout << (char)std::toupper(argv[i][j]);
 			}
 		}
 		std::cout << std::endl;
