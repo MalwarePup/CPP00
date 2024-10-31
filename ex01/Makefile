@@ -23,7 +23,7 @@ OBJS := $(patsubst %.cpp,$(bindir)/%.o,$(notdir $(SRCS)))
 DEPS := $(OBJS:.o=.d)
 
 # Compiler flags
-CXXFLAGS += -I$(incdir) -Wall -Wextra -Werror -MMD -MP -std=c++98 -g3
+CXXFLAGS += -I$(incdir) -Wall -Wextra -Werror -MMD -MP -std=c++98
 
 # Declare phony targets
 .PHONY: all clean fclean re directories
