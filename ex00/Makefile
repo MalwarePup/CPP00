@@ -6,7 +6,7 @@
 #    By: ladloff <ladloff@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/18 13:34:22 by ladloff           #+#    #+#              #
-#    Updated: 2024/06/15 15:41:15 by ladloff          ###   ########.fr        #
+#    Updated: 2024/10/31 06:12:08 by ladloff          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ SHELL := /bin/sh
 NAME := megaphone
 
 # Directory containing source files
-srcdir := ./
+srcdir := ./src
 # Directory where binary files will be placed
 bindir := ./bin
 # Specify search path for prerequisites
