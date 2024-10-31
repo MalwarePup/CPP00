@@ -30,11 +30,11 @@ std::string Contact::promptForNonEmptyInput(const std::string & prompt) const
 	return input;
 }
 
-std::string Contact::truncate(const std::string & str) const
+std::string Contact::truncate(const std::string & str, int width) const
 {
-	if (str.length() > 10)
+	if (str.length() > static_cast<size_t>(width))
 	{
-		return str.substr(0, 9) + '.';
+		return str.substr(0, width - 1) + '.';
 	}
 	return str;
 }

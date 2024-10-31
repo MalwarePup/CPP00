@@ -13,7 +13,7 @@ private:
 	std::string _darkestSecret;
 
 	std::string promptForNonEmptyInput(const std::string& prompt) const;
-	std::string truncate(const std::string &str) const;
+	std::string truncate(const std::string &str, int width = 10) const;
 
 public:
 	Contact();

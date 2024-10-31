@@ -44,14 +44,13 @@ void PhoneBook::addContact()
 	Contact contact;
 	contact.setContact();
 
-	std::cout << "Adding contact at index: " << _currentIndex << std::endl;
 	_contacts[_currentIndex] = contact;
 	_currentIndex = (_currentIndex + 1) % MAX_CONTACTS;
 	if (_contactCount < MAX_CONTACTS)
 	{
 		_contactCount++;
 	}
-	std::cout << "Contact added. Total contacts: " << _contactCount << "\n" << std::endl;
+	std::cout << "\033[1;32mContact added successfully! Total contacts: " << _contactCount << "\033[0m\n" << std::endl;
 }
 
 void PhoneBook::searchContact()

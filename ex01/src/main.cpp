@@ -15,7 +15,7 @@ int main()
 	{
 		if (firstIteration)
 		{
-			std::cout << "Welcome to the phonebook!\n" << std::endl;
+			std::cout << "\033[1;36mWelcome to the phonebook!\n\033[0m" << std::endl;
 			firstIteration = false;
 		}
 		printMenu();

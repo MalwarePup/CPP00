@@ -4,7 +4,7 @@
 
 void printMenu()
 {
-	std::cout << "Please select an option from the following list:" << std::endl;
+	std::cout << "\033[1;33mPlease select an option from the following list:\033[0m" << std::endl;
 	std::cout << "\033[1mADD\033[0m: Add a new contact to the phonebook" << std::endl;
 	std::cout << "\033[1mSEARCH\033[0m: Search for a contact in the phonebook" << std::endl;
 	std::cout << "\033[1mEXIT\033[0m: Exit the phonebook" << std::endl;
